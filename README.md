@@ -37,7 +37,7 @@ To ensure a valid comparison unaffected by seasonal variations or measurement er
 ### 2. Installation & Execution
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/FernandaVil/Glaciar-Analysis-Sentinel2.git](https://github.com/FernandaVil/Glaciar-Analysis-Sentinel2.git)
+   git clone https://github.com/FernandaVil/Glaciar-Analysis-Sentinel2.git
 
 2. **Install dependencies:**
     ```bash
