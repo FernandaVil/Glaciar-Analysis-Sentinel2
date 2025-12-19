@@ -1,0 +1,4 @@
+*.SAFE/
+data/raw/
+.vscode/
+.ipynb_checkpoints/
