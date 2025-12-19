@@ -56,13 +56,13 @@ Para que la comparación sea válida y no se vea afectada por variaciones estaci
 
 ## Estructura del Proyecto
     ```bash
-    Glaciar-Analysis-Sentinel2/
-    ├── data/
-    │   ├── raw/           <-- AQUÍ van tus carpetas .SAFE
-    │   └── map.geojson    <-- AQUÍ va tu archivo de geometría
-    ├── Analisis_Glaciar_Final.ipynb
-    ├── requirements.txt
-    └── README.md
+      Glaciar-Analysis-Sentinel2/
+      ├── data/
+      │   ├── raw/           <-- AQUÍ van tus carpetas .SAFE
+      │   └── map.geojson    <-- AQUÍ va tu archivo de geometría
+      ├── Analisis_Glaciar_Final.ipynb
+      ├── requirements.txt
+      └── README.md
 
 * `Analisis_Glaciar_Final.ipynb`: Notebook principal con el flujo de trabajo documentado.
 * `data/`: Área de interés (AOI) en formato GeoJSON.
