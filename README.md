@@ -7,7 +7,13 @@ This project develops an automated Python pipeline to quantify ice surface loss 
 ## Visual Results (Case Study: Perito Moreno)
 ![Glacier Comparison](./output/comparativa_glaciar.png)
 *NDSI (Normalized Difference Snow Index) visualization. Deep blue highlights areas with high snow/ice presence, allowing for the observation of glacier front variations between 2020 and 2025.*
+## Impact & Conclusions
+The analysis quantified a net ice surface loss of **2.70 km²** over just 5 years. To visualize this magnitude globally:
 
+* The lost ice area is equivalent to roughly **80% of Central Park**.
+* The lost surface is larger than the entire country of **Monaco** (2.02 km²).
+* It represents approximately **378 professional soccer fields**.
+  
 ## Technical Challenges & Solutions
 As a Data Science student, I applied mathematical and statistical tools for raster data processing:
 * **Resolution Standardization:** Implemented bilinear *upsampling* to match 20m bands with the 10m resolution of visible bands.
