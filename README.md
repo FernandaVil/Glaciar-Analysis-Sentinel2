@@ -2,7 +2,7 @@
 
 This project develops an automated Python pipeline to quantify ice surface loss using satellite imagery from the **Sentinel-2 (ESA)** mission. While this analysis focuses specifically on the **Perito Moreno Glacier (Argentina)**, the system is designed to be replicable for any glacier worldwide by simply replacing the Area of Interest (AOI) GeoJSON file.
 
-> 🇪🇸 [Leer este proyecto en Español](./README.es.md)
+> 🇪🇸 [Versión en Español](./README.es.md)
 
 ## Visual Results (Case Study: Perito Moreno)
 ![Glacier Comparison](./output/comparativa_glaciar.png)
