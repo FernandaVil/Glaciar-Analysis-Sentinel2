@@ -49,9 +49,10 @@ Para que la comparación sea válida y no se vea afectada por variaciones estaci
 3. **Instalar dependencias**
     ```bash
     pip install -r requirements.txt
+(Se recomienda el uso de un entorno virtual).
 4. **Mover Datos:** Copia tus carpetas .SAFE dentro de la carpeta `data/raw/` y el archivo map.geojson dentro de la carpeta `data` que se encuentra dentro del proyecto clonado.
-5. **Ejecutar:** Abre `Analisis_Glaciar_Final.ipynb` en VS Code y selecciona el entorno (botón 'Select Kernel' en la esquina superior derecha de la ventana del editor) de Conda o el Virtual Env donde instalaste los requerimientos (el que tiene `rasterio` y `geopandas`).
-6. Haz clic en **"Run All"**.
+5. **Ejecución:** Abrir el Notebook `Analisis_Glaciar_Final.ipynb` y ejecutar las celdas seleccionando el kernel donde se instalaron las dependencias.
+
 
 
 ## Estructura del Proyecto
