@@ -50,10 +50,10 @@ To ensure a valid comparison unaffected by seasonal variations or measurement er
 3. **Install dependencies:**
     ```bash
     pip install -r requirements.txt
+(Virtual environment recommended).
 
 4. **Data Setup:** Copy your .SAFE folders into data/raw/ and the map.geojson file into the data/ folder within the cloned project.
-5. **Select Kernel:** Open `Analisis_Glaciar_Final.ipynb` in VS Code. Click on "Select Kernel" (top right corner) and choose the Conda environment or Virtual Env where you installed the requirements (the one containing rasterio and geopandas).
-6. **Run:** Click on "Run All".
+5. **Execution:** Open the Notebook `Analisis_Glaciar_Final.ipynb` and run the cells, ensuring the correct kernel is selected.
 
  ## Project Structure
 
