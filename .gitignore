@@ -2,3 +2,4 @@
 data/raw/
 .vscode/
 .ipynb_checkpoints/
+data/*.geojson/
