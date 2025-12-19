@@ -10,12 +10,13 @@ Como estudiante de Ciencia de Datos, apliqué herramientas matemáticas y estad�
 * **Estandarización de Resoluciones:** Implementé un *upsampling* bilineal para igualar las bandas de 20m a la resolución de 10m de las bandas visibles.
 * **Escalabilidad:** El código es independiente de la ubicación; procesa cualquier par de imágenes Sentinel-2 siempre que cubran las coordenadas definidas en el archivo GeoJSON de entrada.
 * **Índice Espectral (NDSI):** Utilizado para discriminar con precisión hielo de nubes y suelo. 
+
   $$NDSI = \frac{Green - SWIR}{Green + SWIR}$$
 
 * **Optimización:** Uso de `MemoryFile` para procesar recortes en memoria volátil, mejorando la eficiencia del pipeline.
 ## Cómo ejecutar este proyecto localmente
 
-### 1. Obtención de Datos (Paso Crucial)
+### 1. Obtención de Datos 
 Para ejecutar este notebook, necesitas descargar las imágenes satelitales crudas:
 1. Ve a [Copernicus Browser](https://dataspace.copernicus.eu/browser/).
 2. Busca la zona del **Glaciar Perito Moreno** (o la zona de tu interés).
