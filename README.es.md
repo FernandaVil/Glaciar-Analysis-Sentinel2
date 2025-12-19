@@ -1,6 +1,9 @@
 # Análisis de Retroceso Glaciar mediante Imágenes Sentinel-2
 
 Este proyecto desarrolla un pipeline automatizado en Python para cuantificar la pérdida de superficie de hielo utilizando imágenes satelitales de la misión **Sentinel-2 (ESA)**. Aunque este análisis se centra específicamente en el **Glaciar Perito Moreno (Argentina)**, el sistema está diseñado para ser replicable en cualquier otro glaciar del mundo simplemente sustituyendo el archivo GeoJSON del área de interés (AOI).
+
+> 🇺🇸 [English Version](./README.md)
+
 ## Resultados Visuales
 ![Comparativa Glaciar](./output/comparativa_glaciar.png)
 *Visualización del índice NDSI (Normalized Difference Snow Index). El color azul intenso resalta las áreas con mayor presencia de nieve/hielo.*
