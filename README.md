@@ -16,13 +16,14 @@ Como estudiante de Ciencia de Datos, apliqué herramientas matemáticas y estad�
 * **Optimización:** Uso de `MemoryFile` para procesar recortes en memoria volátil, mejorando la eficiencia del pipeline.
 ## Cómo ejecutar este proyecto localmente
 
-### 1. Obtención de Datos 
-Para ejecutar este notebook, necesitas descargar las imágenes satelitales crudas:
-1. Ve a [Copernicus Browser](https://dataspace.copernicus.eu/browser/).
-2. Busca la zona del **Glaciar Perito Moreno** (o la zona de tu interés).
-3. Filtra por la misión **Sentinel-2** y busca fechas con **0% de nubosidad**.
-4. Descarga el producto en formato **L2A** (Surface Reflectance).
-5. Descomprime la carpeta `.SAFE` dentro de `data/raw/` en este proyecto.
+### 1. Obtención de Datos (Criterios de Selección)
+Para que la comparación sea válida y no se vea afectada por variaciones estacionales o errores de medición, se deben seguir estos criterios en [Copernicus Browser](https://dataspace.copernicus.eu/browser/):
+
+* **Consistencia Estacional:** Al trabajar con glaciares del Hemisferio Sur, es fundamental elegir imágenes del **verano austral** (Enero-Marzo) para ambas fechas. Esto asegura que estemos midiendo el hielo real y no la cobertura de nieve estacional de invierno.
+* **Filtro de Nubosidad:** Lo ideal es buscar imágenes con **<10% de nubosidad**. En caso de no haber disponibilidad para las fechas deseadas, se puede extender el margen hasta un **20% máximo**, verificando que las nubes no cubran el frente del glaciar.
+* **Tipo de Producto:** Descargar siempre en formato **L2A (Surface Reflectance)** para garantizar que los valores de reflectancia estén corregidos atmosféricamente.
+* **Instalación:** Descomprimir la carpeta `.SAFE` dentro de `data/raw/`.
+* 
 ### 2. Instalación y Ejecución
 1. **Clonar el repositorio:**
    ```bash
