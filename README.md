@@ -36,8 +36,11 @@ To ensure a valid comparison unaffected by seasonal variations or measurement er
 * **Setup:** Extract the .SAFE folder into the project directory as specified below.
 #### **Area of Interest (GeoJSON)**
   -Go to [geojson.io](https://geojson.io/)
+  
   -Draw a polygon over the glacier front you wish to analyze.
+  
   -Click Save > GeoJSON.
+  
   -Rename the file to map.geojson and save it in the data/ folder.
   
 ### 2. Installation & Execution
