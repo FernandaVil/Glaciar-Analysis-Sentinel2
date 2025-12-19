@@ -23,7 +23,7 @@ Para que la comparación sea válida y no se vea afectada por variaciones estaci
 * **Filtro de Nubosidad:** Lo ideal es buscar imágenes con **<10% de nubosidad**. En caso de no haber disponibilidad para las fechas deseadas, se puede extender el margen hasta un **20% máximo**, verificando que las nubes no cubran el frente del glaciar.
 * **Tipo de Producto:** Descargar siempre en formato **L2A (Surface Reflectance)** para garantizar que los valores de reflectancia estén corregidos atmosféricamente.
 * **Instalación:** Descomprimir la carpeta `.SAFE` dentro de `data/raw/`.
-* 
+
 ### 2. Instalación y Ejecución
 1. **Clonar el repositorio:**
    ```bash
