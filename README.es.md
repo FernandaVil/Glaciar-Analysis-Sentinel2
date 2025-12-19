@@ -26,34 +26,43 @@ Como estudiante de Ciencia de Datos, apliqué herramientas matemáticas y estad�
 ## Cómo ejecutar este proyecto localmente
 
 ### 1. Obtención de Datos (Criterios de Selección)
+#### **Imagenes Satelitales**
 Para que la comparación sea válida y no se vea afectada por variaciones estacionales o errores de medición, se deben seguir estos criterios en [Copernicus Browser](https://dataspace.copernicus.eu/browser/):
 
 * **Consistencia Estacional:** Al trabajar con glaciares del Hemisferio Sur, es fundamental elegir imágenes del **verano austral** (Enero-Marzo) para ambas fechas. Esto asegura que estemos midiendo el hielo real y no la cobertura de nieve estacional de invierno.
 * **Filtro de Nubosidad:** Lo ideal es buscar imágenes con **<10% de nubosidad**. En caso de no haber disponibilidad para las fechas deseadas, se puede extender el margen hasta un **20% máximo**, verificando que las nubes no cubran el frente del glaciar.
 * **Tipo de Producto:** Descargar siempre en formato **L2A (Surface Reflectance)** para garantizar que los valores de reflectancia estén corregidos atmosféricamente.
-* **Instalación:** Descomprimir la carpeta `.SAFE` dentro de `data/raw/`.
+* **Instalación:** Descomprimir la carpeta `.SAFE` .
+#### **Área de Interés (GeoJSON):**
+   - Entra en [geojson.io](https://geojson.io/).
+   - Dibuja un polígono sobre el frente del glaciar que deseas analizar.
+   - Haz clic en `Save > GeoJSON`.
+   - Renombra el archivo como `map.geojson` y guárdalo.
 
 ### 2. Instalación y Ejecución
 1. **Clonar el repositorio:**
    ```bash
-   git clone [https://github.com/FernandaVil/Glaciar-Analysis-Sentinel2.git](https://github.com/FernandaVil/Glaciar-Analysis-Sentinel2.git)
-
-2. **Instalar dependencias**
+   git clone https://github.com/FernandaVil/Glaciar-Analysis-Sentinel2.git
+2. **Entrar a la carpeta:**
+   ```bash
+   cd Glaciar-Analysis-Sentinel2
+3. **Instalar dependencias**
     ```bash
     pip install -r requirements.txt
-3. **Ejecutar:** Abre `Analisis_Glaciar_Final.ipynb` en VS Code o Jupyter. Si quieres analizar otro glaciar, solo debes reemplazar `data/map.geojson` por uno nuevo generado en [geojson.io](https://geojson.io/).
-
+4. **Mover Datos:** Copia tus carpetas .SAFE dentro de la carpeta `data/raw/` y el archivo map.geojson dentro de la carpeta `data` que se encuentra dentro del proyecto clonado.
+5. **Ejecutar:** Abre `Analisis_Glaciar_Final.ipynb` en VS Code y selecciona el entorno (botón 'Select Kernel' en la esquina superior derecha de la ventana del editor) de Conda o el Virtual Env donde instalaste los requerimientos (el que tiene `rasterio` y `geopandas`).
+6. Haz clic en **"Run All"**.
 
 
 ## Estructura del Proyecto
-
-Glaciar-Analysis-Sentinel2/
-├── data/
-│   ├── raw/           <-- AQUÍ van tus carpetas .SAFE
-│   └── map.geojson    <-- AQUÍ va tu archivo de geometría
-├── Analisis_Glaciar_Final.ipynb
-├── requirements.txt
-└── README.md
+    ```bash
+    Glaciar-Analysis-Sentinel2/
+    ├── data/
+    │   ├── raw/           <-- AQUÍ van tus carpetas .SAFE
+    │   └── map.geojson    <-- AQUÍ va tu archivo de geometría
+    ├── Analisis_Glaciar_Final.ipynb
+    ├── requirements.txt
+    └── README.md
 
 * `Analisis_Glaciar_Final.ipynb`: Notebook principal con el flujo de trabajo documentado.
 * `data/`: Área de interés (AOI) en formato GeoJSON.
