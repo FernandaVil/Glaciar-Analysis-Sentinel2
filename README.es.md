@@ -43,7 +43,18 @@ Para que la comparación sea válida y no se vea afectada por variaciones estaci
     pip install -r requirements.txt
 3. **Ejecutar:** Abre `Analisis_Glaciar_Final.ipynb` en VS Code o Jupyter. Si quieres analizar otro glaciar, solo debes reemplazar `data/map.geojson` por uno nuevo generado en [geojson.io](https://geojson.io/).
 
+
+
 ## Estructura del Proyecto
+
+Glaciar-Analysis-Sentinel2/
+├── data/
+│   ├── raw/           <-- AQUÍ van tus carpetas .SAFE
+│   └── map.geojson    <-- AQUÍ va tu archivo de geometría
+├── Analisis_Glaciar_Final.ipynb
+├── requirements.txt
+└── README.md
+
 * `Analisis_Glaciar_Final.ipynb`: Notebook principal con el flujo de trabajo documentado.
 * `data/`: Área de interés (AOI) en formato GeoJSON.
 * `output/`: Mapas comparativos generados.
