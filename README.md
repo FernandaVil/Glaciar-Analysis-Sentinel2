@@ -35,13 +35,10 @@ To ensure a valid comparison unaffected by seasonal variations or measurement er
 * **Product Type:** Always download in **L2A (Surface Reflectance)** format to ensure atmospherically corrected values.
 * **Setup:** Extract the .SAFE folder into the project directory as specified below.
 #### **Area of Interest (GeoJSON)**
-  -Go to [geojson.io](https://geojson.io/)
-  
-  -Draw a polygon over the glacier front you wish to analyze.
-  
-  -Click Save > GeoJSON.
-  
-  -Rename the file to map.geojson and save it in the data/ folder.
+  *Go to [geojson.io](https://geojson.io/)
+  *Draw a polygon over the glacier front you wish to analyze.
+  *Click Save > GeoJSON.
+  *Rename the file to map.geojson and save it in the data/ folder.
   
 ### 2. Installation & Execution
 1. **Clone the repository:**
