@@ -27,25 +27,44 @@ As a Data Science student, I applied mathematical and statistical tools for rast
 ## How to Run This Project Locally
 
 ### 1. Data Acquisition (Selection Criteria)
+#### **Satellite Imagery**
 To ensure a valid comparison unaffected by seasonal variations or measurement errors, follow these criteria in the [Copernicus Browser](https://dataspace.copernicus.eu/browser/):
 
 * **Seasonal Consistency:** For Southern Hemisphere glaciers, it is crucial to choose images from the **austral summer** (January-March) for both dates. This ensures we are measuring actual ice and not seasonal winter snow cover.
 * **Cloud Filter:** Ideally, search for images with **<10% cloud cover**. If unavailable, the margin can be extended to **20% maximum**, verifying that clouds do not obstruct the glacier front.
 * **Product Type:** Always download in **L2A (Surface Reflectance)** format to ensure atmospherically corrected values.
-* **Setup:** Unzip the `.SAFE` folder into `data/raw/`.
-
+* **Setup:** Extract the .SAFE folder into the project directory as specified below.
+#### **Area of Interest (GeoJSON)**
+  -Go to [geojson.io](https://geojson.io/)
+  -Draw a polygon over the glacier front you wish to analyze.
+  -Click Save > GeoJSON.
+  -Rename the file to map.geojson and save it in the data/ folder.
+  
 ### 2. Installation & Execution
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/FernandaVil/Glaciar-Analysis-Sentinel2.git
-
-2. **Install dependencies:**
+2. **Navigate to the folder:**
+   ```bash
+   cd Glaciar-Analysis-Sentinel2
+3. **Install dependencies:**
     ```bash
     pip install -r requirements.txt
 
-3. **Run:** Open `Analisis_Glaciar_Final.ipynb` in VS Code or Jupyter. To analyze a different glacier, simply replace `data/map.geojson` with a new one generated at [geojson.io](https://geojson.io/).
+4. **Data Setup:** Copy your .SAFE folders into data/raw/ and the map.geojson file into the data/ folder within the cloned project.
+5. **Select Kernel:** Open `Analisis_Glaciar_Final.ipynb` in VS Code. Click on "Select Kernel" (top right corner) and choose the Conda environment or Virtual Env where you installed the requirements (the one containing rasterio and geopandas).
+6. **Run:** Click on "Run All".
 
  ## Project Structure
+
+     ```bash
+     Glaciar-Analysis-Sentinel2/
+      ├── data/
+      │   ├── raw/            <-- Place your .SAFE folders HERE
+      │   └── map.geojson     <-- Place your geometry file HERE
+      ├── Analisis_Glaciar_Final.ipynb
+      ├── requirements.txt
+      └── README.md
  * `Analisis_Glaciar_Final.ipynb` : Main notebook with documented workflow.
  * `data/`: Area of Interest (AOI) in GeoJSON format.
  * `output/`: Generated comparative maps.
