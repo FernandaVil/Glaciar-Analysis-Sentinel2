@@ -7,6 +7,12 @@ Este proyecto desarrolla un pipeline automatizado en Python para cuantificar la 
 ## Resultados Visuales
 ![Comparativa Glaciar](./output/comparativa_glaciar.png)
 *Visualización del índice NDSI (Normalized Difference Snow Index). El color azul intenso resalta las áreas con mayor presencia de nieve/hielo.*
+## Impacto y Conclusiones
+El análisis cuantificó una pérdida neta de **2.70 km²** de superficie de hielo en solo 5 años. Para dimensionar esta magnitud en el contexto local (Argentina):
+
+* La superficie perdida equivale a casi el **80% de la Reserva Ecológica Costanera Sur** de Buenos Aires.
+* Representa aproximadamente **378 canchas de fútbol** profesionales.
+* Es una superficie mayor a la de todo el barrio de **Puerto Madero** (aprox 2.1 km²).
 
 ## Desafíos Técnicos y Soluciones
 Como estudiante de Ciencia de Datos, apliqué herramientas matemáticas y estadísticas para el procesamiento de datos raster:
