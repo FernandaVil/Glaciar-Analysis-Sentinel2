@@ -57,7 +57,7 @@ To ensure a valid comparison unaffected by seasonal variations or measurement er
 
  ## Project Structure
 
-     ```bash
+  ```bash
      Glaciar-Analysis-Sentinel2/
       ├── data/
       │   ├── raw/            <-- Place your .SAFE folders HERE
@@ -65,6 +65,7 @@ To ensure a valid comparison unaffected by seasonal variations or measurement er
       ├── Analisis_Glaciar_Final.ipynb
       ├── requirements.txt
       └── README.md
+  ```
  * `Analisis_Glaciar_Final.ipynb` : Main notebook with documented workflow.
  * `data/`: Area of Interest (AOI) in GeoJSON format.
  * `output/`: Generated comparative maps.
